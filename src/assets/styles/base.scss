@@ -1,0 +1,96 @@
+@font-face {
+  font-family: GrtskPeta;
+  src: url('../font/GrtskPeta-Regular.woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: GrtskPeta;
+  src: url('../font/GrtskPeta-Medium.woff2');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: GrtskPeta;
+  src: url('../font/GrtskPeta-Bold.woff2');
+  font-weight: 700;
+}
+
+:root {
+  --color-black-hsl: 0, 0%, 0%;
+  --color-white-hsl: 0, 0%, 100%;
+  --color-gray-light-hsl: 200, 10%, 83%;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-red: #eb5757;
+  --color-green: #219653;
+
+  --color-gray-lighter: #f2f2f2;
+  --color-gray-light: #ced4d7;
+  --color-gray: #bdbdbd;
+  --color-gray-dark: #828b8d;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fs-xs: 8px;
+  --fs-s: 12px;
+  --fs-m: 14px;
+  --fs-l: 16px;
+  --fs-xl: 18px;
+  --fs-2xl: 21px;
+  --fs-3xl: 32px;
+  --fs-4xl: 48px;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'GrtskPeta', system-ui, -apple-system, sans-serif;
+  color: var(--color-black);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-regular);
+  font-style: normal;
+  letter-spacing: -0.2px;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 0;
+  letter-spacing: -0.2px;
+}
+
+input[type='text'],
+input[type='email'] {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 25px;
+  margin: 0;
+}
