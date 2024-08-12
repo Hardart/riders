@@ -79,9 +79,9 @@ a {
 }
 
 button {
+  font: inherit;
   border: none;
   outline: none;
-  padding: 0;
   letter-spacing: -0.2px;
 }
 
@@ -93,4 +93,14 @@ input[type='email'] {
   font-size: inherit;
   line-height: 25px;
   margin: 0;
+}
+
+.rs-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+
+  &--stroke {
+    stroke: currentColor;
+  }
 }
