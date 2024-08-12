@@ -104,3 +104,33 @@ input[type='email'] {
     stroke: currentColor;
   }
 }
+
+.slider-navigation {
+  position: absolute;
+  top: 50%;
+  padding: 30px 12px 30px 10px;
+  background-color: hsla(var(--color-white-hsl), 0.9);
+  box-shadow: -4px 4px 4px 0px hsla(var(--color-black-hsl), 0.05);
+
+  &:hover {
+    background-color: hsla(var(--color-gray-light-hsl), 0.9);
+    cursor: pointer;
+  }
+
+  &__icon {
+    margin-top: 2px;
+    width: 10px;
+    fill: transparent;
+    stroke: var(--color-black);
+  }
+
+  &--left {
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &--right {
+    right: 0;
+    transform: translateY(-50%) rotateY(180deg);
+  }
+}
