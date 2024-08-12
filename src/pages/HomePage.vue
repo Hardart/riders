@@ -1,24 +1,24 @@
 <script setup lang="ts">
-import RsBrandsSection from '@/components/RsBrandsSection.vue'
-import RsNewProductsSection from '@/components/RsNewProductsSection.vue'
-import RsPopularProductsSection from '@/components/RsPopularProductsSection.vue'
-import RsPromotionSection from '@/components/RsPromotionSection.vue'
+import RsSectionBrands from '@/components/RsSectionBrands.vue'
+import RsSectionNewProducts from '@/components/RsSectionNewProducts.vue'
+import RsSectionPopularProducts from '@/components/RsSectionPopularProducts.vue'
+import RsSectionPromotion from '@/components/RsSectionPromotion.vue'
 import RsSliderOfBlogArticles from '@/components/RsSliderOfBlogArticles.vue'
 import RsSliderMain from '@/components/RsSliderMain.vue'
 import RsSpecialOffer from '@/components/RsSpecialOffer.vue'
-import RsLoyalitySection from '@/components/RsLoyalitySection.vue'
+import RsSectionLoyality from '@/components/RsSectionLoyality.vue'
 </script>
 
 <template>
   <main class="rs-main">
     <RsSliderMain />
-    <RsBrandsSection />
-    <RsPromotionSection />
-    <RsNewProductsSection />
+    <RsSectionBrands />
+    <RsSectionPromotion />
+    <RsSectionNewProducts />
     <RsSpecialOffer />
-    <RsPopularProductsSection />
+    <RsSectionPopularProducts />
     <RsSliderOfBlogArticles />
-    <RsLoyalitySection />
+    <RsSectionLoyality />
   </main>
 </template>
 
