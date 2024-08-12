@@ -122,61 +122,9 @@
 
   &__input {
     max-width: 400px;
-  }
-}
-
-.rs-input {
-  width: 100%;
-  height: 50px;
-
-  &__container {
-    position: relative;
-    height: inherit;
-  }
-
-  &__label {
-    font-size: var(--fs-s);
-    line-height: 20px;
-    color: var(--color-gray-dark);
-  }
-
-  &__label + &__container {
-    margin-top: 4px;
-  }
-
-  &__field {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    font-weight: var(--fw-medium);
-    vertical-align: middle;
-    padding: 0 10px;
-
-    &--icon {
-      padding-left: 40px;
-    }
-    &--icon-flip {
-      padding-right: 60px;
-    }
-  }
-
-  &__icon {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 40px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     color: var(--color-black);
-    pointer-events: none;
-
-    &--flip {
-      right: 0;
-      left: auto;
-      width: 60px;
-    }
+    background-color: var(--color-white);
+    border-color: var(--color-white);
   }
 }
 </style>
