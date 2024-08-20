@@ -1,0 +1,60 @@
+@import '@/styles/content-grid-extend.scss';
+
+.rs-header__middle {
+  display: grid;
+  padding: 22px 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.rs-header__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.gender-filter {
+  display: flex;
+  align-items: center;
+  gap: 0 25px;
+
+  &__item {
+    position: relative;
+    font-size: var(--fs-m);
+    font-weight: var(--fw-medium);
+    line-height: 16.8px;
+
+    &--active::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-black);
+    }
+  }
+}
+
+.user-interactions {
+  display: flex;
+  align-self: end;
+  align-items: end;
+  justify-content: end;
+  gap: 0 27px;
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-medium);
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    line-height: 10px;
+    height: 40px;
+
+    &:hover {
+      color: var(--color-gray-dark);
+    }
+  }
+}
