@@ -1,0 +1,28 @@
+.special-offer {
+  position: relative;
+  margin: 35px 0;
+
+  &__image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-top: 25px;
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-medium);
+    line-height: 35px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  &__description {
+    max-width: 670px;
+    margin: 10px auto 0;
+    color: var(--color-gray-dark);
+    font-size: var(--fs-m);
+    line-height: 25px;
+    text-align: center;
+  }
+}

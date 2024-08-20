@@ -1,0 +1,13 @@
+.brands-section {
+  padding: 20px 30px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    opacity: 0.7;
+  }
+}

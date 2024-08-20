@@ -1,0 +1,127 @@
+.new-products-section {
+  margin: 20px 0;
+  padding: 40px 0;
+}
+
+.products-carousel {
+  position: relative;
+  padding: 40px 0;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 25px;
+  }
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    position: relative;
+    display: grid;
+    place-items: center;
+
+    &:hover .product-card__image {
+      transform: rotateY(180deg);
+    }
+  }
+
+  &__image {
+    padding: 50px 25px;
+    background-color: #f9f9f9;
+  }
+
+  &__title {
+    margin-top: 10px;
+    height: 18px;
+    font-size: var(--fs-l);
+    font-weight: var(--fw-medium);
+    line-height: 25px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    height: 18px;
+    margin-top: 5px;
+    color: var(--color-gray-dark);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-medium);
+    line-height: 25px;
+    vertical-align: bottom;
+  }
+
+  &__pricing {
+    margin-top: 10px;
+  }
+
+  &__price {
+    font-size: var(--fs-xl);
+    line-height: 30px;
+
+    &--old {
+      text-decoration: line-through;
+    }
+
+    &--new {
+      margin-left: 15px;
+      color: var(--color-red);
+    }
+  }
+
+  &__info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__badge {
+    padding: 0 10px;
+    font-size: var(--fs-m);
+    line-height: 25px;
+    background-color: var(--color-white);
+
+    &--accent {
+      color: var(--color-gray-lighter);
+      background-color: var(--color-red);
+      font-weight: var(--fw-medium);
+    }
+
+    &--secondary {
+      color: var(--color-gray-lighter);
+      background-color: #333;
+      font-weight: var(--fw-regular);
+    }
+  }
+
+  &__favorite {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    color: var(--color-white);
+    stroke: var(--color-black);
+    outline: solid 1px var(--color-gray-lighter);
+    cursor: pointer;
+
+    &:hover {
+      stroke: var(--color-gray-dark);
+    }
+
+    &--selected {
+      background-color: var(--color-black);
+      stroke: var(--color-white);
+      outline: none;
+
+      &:hover {
+        stroke: var(--color-white);
+      }
+    }
+  }
+}

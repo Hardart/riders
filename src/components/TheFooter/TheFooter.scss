@@ -1,0 +1,22 @@
+@import '@/styles/content-grid-extend.scss';
+
+.rs-footer {
+  position: relative;
+  background-color: var(--color-black);
+  margin-top: 160px;
+  padding: 40px 0;
+  @extend %content-grid;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('@/assets/images/footer-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+}
