@@ -1,0 +1,5 @@
+@import '@/styles/content-grid-extend.scss';
+
+.header {
+  @extend %content-grid;
+}

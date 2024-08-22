@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
+</script>
 
 <template>
-  <section class="new-products-section">
+  <section class="new-products">
     <h3 class="section-title">Новинки</h3>
     <div class="products-carousel">
       <div class="products-carousel__items">
@@ -15,9 +17,7 @@
             <div
               class="product-card__favorite product-card__favorite--selected"
             >
-              <svg class="rs-icon">
-                <use xlink:href="@/assets/icons/sprite.svg#star"></use>
-              </svg>
+              <SvgIcon icon="star" class="product-card__favorite-icon" />
             </div>
           </div>
           <div class="product-card__body">
@@ -36,9 +36,7 @@
               alt=""
             />
             <div class="product-card__favorite">
-              <svg class="rs-icon">
-                <use xlink:href="@/assets/icons/sprite.svg#star"></use>
-              </svg>
+              <SvgIcon icon="star" class="product-card__favorite-icon" />
             </div>
             <div class="product-card__info">
               <p class="product-card__badge product-card__badge--accent">
@@ -67,9 +65,7 @@
               alt=""
             />
             <div class="product-card__favorite">
-              <svg class="rs-icon">
-                <use xlink:href="@/assets/icons/sprite.svg#star"></use>
-              </svg>
+              <SvgIcon icon="star" class="product-card__favorite-icon" />
             </div>
           </div>
           <div class="product-card__body">
@@ -88,9 +84,7 @@
               alt=""
             />
             <div class="product-card__favorite">
-              <svg class="rs-icon">
-                <use xlink:href="@/assets/icons/sprite.svg#star"></use>
-              </svg>
+              <SvgIcon icon="star" class="product-card__favorite-icon" />
             </div>
           </div>
           <div class="product-card__body">
@@ -103,22 +97,16 @@
         </article>
       </div>
       <div class="carousel-navigation carousel-navigation--left">
-        <svg class="rs-icon carousel-navigation__icon">
-          <use xlink:href="@/assets/icons/sprite.svg#chevron-left"></use>
-        </svg>
+        <SvgIcon icon="chevronLeft" class="carousel-navigation__icon" />
       </div>
       <div class="carousel-navigation carousel-navigation--right">
-        <svg class="rs-icon carousel-navigation__icon">
-          <use xlink:href="@/assets/icons/sprite.svg#chevron-left"></use>
-        </svg>
+        <SvgIcon icon="chevronLeft" class="carousel-navigation__icon" />
       </div>
     </div>
     <div class="section-show-more-button">
-      <button class="rs-button rs-button--secondary">Показать больше</button>
+      <button class="button button--secondary">Показать больше</button>
     </div>
   </section>
 </template>
 
-<style lang="scss">
-@import './styles.scss';
-</style>
+<style lang="scss" src="./styles.scss" scoped />
