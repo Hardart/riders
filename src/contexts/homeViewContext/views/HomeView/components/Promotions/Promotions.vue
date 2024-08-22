@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="promotion-section">
+  <section class="promotions">
     <article class="promotion-card">
       <img class="promotion-card__image" src="@/assets/images/5.png" alt="" />
       <a href="#" class="promotion-card__link">название акции №1</a>
@@ -13,6 +13,4 @@
   </section>
 </template>
 
-<style lang="scss">
-@import './styles.scss';
-</style>
+<style lang="scss" src="./styles.scss" scoped />

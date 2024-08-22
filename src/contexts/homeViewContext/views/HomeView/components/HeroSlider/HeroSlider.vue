@@ -1,33 +1,29 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
+</script>
 
 <template>
-  <div class="main-slider">
-    <div class="main-slider__items">
-      <div class="main-slider__item">
+  <div class="hero-slider">
+    <div class="hero-slider__items">
+      <div class="hero-slider__item">
         <img src="@/assets/images/1.png" width="1360" height="482" alt="" />
       </div>
-      <div class="main-slider__item">
-        <p class="main-slider__title">winter sale до -70%</p>
+      <div class="hero-slider__item">
+        <p class="hero-slider__title">winter sale до -70%</p>
         <img src="@/assets/images/2.png" width="1360" height="482" alt="" />
       </div>
-      <div class="main-slider__item">
-        <p class="main-slider__title">LIB TECH</p>
+      <div class="hero-slider__item">
+        <p class="hero-slider__title">LIB TECH</p>
         <img src="@/assets/images/3.png" width="1360" height="482" alt="" />
       </div>
     </div>
     <div class="slider-navigation slider-navigation--left">
-      <svg class="rs-icon slider-navigation__icon">
-        <use xlink:href="@/assets/icons/sprite.svg#chevron-left"></use>
-      </svg>
+      <SvgIcon icon="chevronLeft" class="slider-navigation__icon" />
     </div>
     <div class="slider-navigation slider-navigation--right">
-      <svg class="rs-icon slider-navigation__icon">
-        <use xlink:href="@/assets/icons/sprite.svg#chevron-left"></use>
-      </svg>
+      <SvgIcon icon="chevronLeft" class="slider-navigation__icon" />
     </div>
   </div>
 </template>
 
-<style lang="scss">
-@import './styles.scss';
-</style>
+<style lang="scss" src="./styles.scss" scoped />

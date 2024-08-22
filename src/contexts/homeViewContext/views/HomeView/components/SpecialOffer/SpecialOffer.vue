@@ -13,6 +13,4 @@
   </div>
 </template>
 
-<style lang="scss">
-@import './styles.scss';
-</style>
+<style lang="scss" src="./styles.scss" scoped />

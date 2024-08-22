@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import Brands from '@/contexts/homeViewContext/views/HomeView/components/Brands/Brands.vue'
-import NewProducts from '@/contexts/homeViewContext/views/HomeView/components/NewProducts/NewProducts.vue'
-import PopularProducts from '@/contexts/homeViewContext/views/HomeView/components/PopularProducts/PopularProducts.vue'
-import Promotions from '@/contexts/homeViewContext/views/HomeView/components/Promotions/Promotions.vue'
-import BlogArticlesSlider from '@/contexts/homeViewContext/views/HomeView/components/BlogArticlesSlider/BlogArticlesSlider.vue'
-import HeroSlider from '@/contexts/homeViewContext/views/HomeView/components/HeroSlider/HeroSlider.vue'
-import SpecialOffer from '@/contexts/homeViewContext/views/HomeView/components/SpecialOffer/SpecialOffer.vue'
-import LoyalityInfo from '@/contexts/homeViewContext/views/HomeView/components/LoyalityInfo/LoyalityInfo.vue'
+import Brands from './components/Brands/Brands.vue'
+import NewProducts from './components/NewProducts/NewProducts.vue'
+import PopularProducts from './components/PopularProducts/PopularProducts.vue'
+import Promotions from './components/Promotions/Promotions.vue'
+import BlogArticlesSlider from './components/BlogArticlesSlider/BlogArticlesSlider.vue'
+import HeroSlider from './components/HeroSlider/HeroSlider.vue'
+import SpecialOffer from './components/SpecialOffer/SpecialOffer.vue'
+import LoyalityInfo from './components/LoyalityInfo/LoyalityInfo.vue'
 </script>
 
 <template>
-  <main class="rs-main">
+  <main class="main">
     <HeroSlider />
     <Brands />
     <Promotions />
@@ -22,10 +22,4 @@ import LoyalityInfo from '@/contexts/homeViewContext/views/HomeView/components/L
   </main>
 </template>
 
-<style lang="scss">
-@import '@/styles/content-grid-extend.scss';
-
-.rs-main {
-  @extend %content-grid;
-}
-</style>
+<style lang="scss" src="./styles.scss" scoped />
