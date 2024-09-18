@@ -1,3 +1,5 @@
+@import './media-queries';
+
 %content-grid > * {
   grid-column: base;
 }
@@ -7,13 +9,39 @@
 }
 
 %content-grid {
+  --content-width: 1360px;
   --gap: 72px;
   --full: minmax(var(--gap), 1fr);
-  --content: min(1360px, 100% - var(--gap) * 2);
+  --content: min(var(--content-width), 100% - var(--gap) * 2);
 
   display: grid;
   grid-template-columns:
     [full-start] var(--full)
     [base-start] var(--content) [base-end]
     var(--full) [full-end];
+}
+
+@media (min-width: $screen-3xl) {
+  %content-grid {
+    --content-width: 2000px;
+    --gap: 240px;
+  }
+}
+
+@media (max-width: $screen-2xl) {
+  %content-grid {
+    --gap: 60px;
+  }
+}
+
+@media (max-width: $screen-xl) {
+  %content-grid {
+    --gap: 40px;
+  }
+}
+
+@media (max-width: $screen-l) {
+  %content-grid {
+    --gap: 20px;
+  }
 }
