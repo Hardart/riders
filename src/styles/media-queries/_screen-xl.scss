@@ -1,0 +1,36 @@
+@media (max-width: $screen-xl) {
+  .products-carousel {
+    position: relative;
+    padding: var(--gap);
+    overflow-x: scroll;
+    scrollbar-width: none;
+
+    &__items {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+      flex: none;
+
+      &:last-child {
+        padding-right: var(--gap);
+      }
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .product-card {
+    &__image {
+      padding: 50px 20px;
+    }
+  }
+
+  .slider-navigation,
+  .carousel-navigation {
+    display: none;
+  }
+}
