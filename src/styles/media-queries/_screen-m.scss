@@ -1,0 +1,24 @@
+@media (max-width: $screen-m) {
+  .button {
+    padding: 13px 68px;
+    line-height: 25px;
+  }
+
+  .section-title {
+    padding: 0 var(--gap);
+    font-size: var(--fs-2xl);
+    line-height: 30px;
+  }
+
+  .products-carousel {
+    padding: 20px;
+
+    &__items {
+      gap: 0 10px;
+    }
+
+    &__item {
+      --max-width: 230px;
+    }
+  }
+}
