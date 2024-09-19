@@ -12,10 +12,10 @@ import SvgImage from '@/components/SvgImage/SvgImage.vue'
         </div>
 
         <h3 class="loyality-card__title">Программа лояльности</h3>
-        <p class="loyality-card__descripiton">
+        <p class="loyality-card__description">
           Зарабатывайте баллы и получайте преимущества
         </p>
-        <button class="button">вступить в клуб</button>
+        <button class="button loyality-card__button">вступить в клуб</button>
       </div>
     </div>
 
@@ -25,7 +25,7 @@ import SvgImage from '@/components/SvgImage/SvgImage.vue'
           <SvgIcon icon="mail" class="loyality-card__icon" />
         </div>
         <h3 class="loyality-card__title">Скидка -10%</h3>
-        <p class="loyality-card__descripiton">За подписку на наши новости</p>
+        <p class="loyality-card__description">За подписку на наши новости</p>
         <div class="input loyality-card__input">
           <div class="input__container">
             <div class="input__icon">
