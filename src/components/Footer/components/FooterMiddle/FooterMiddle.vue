@@ -19,7 +19,7 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
           </div>
         </div>
         <div class="mobile-apps__qr">
-          <img src="@/assets/images/qr.jpg" alt="" />
+          <SvgImage image="appQrCode" />
         </div>
       </div>
     </div>
