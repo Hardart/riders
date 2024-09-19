@@ -1,0 +1,9 @@
+<svg viewBox="0 0 414 732" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 37L117 0L311 52L414 37V732H0V37Z" fill="black"/>
+<g transform="translate(0,3)">
+    <path d="M0 37L117 0L311 52L414 37V400H0V37Z" fill="white"/>
+</g>
+<g transform="translate(0,8)">
+    <path d="M0 37L117 0L311 52L414 37V400H0V37Z" fill="black"/>
+</g>
+</svg>
