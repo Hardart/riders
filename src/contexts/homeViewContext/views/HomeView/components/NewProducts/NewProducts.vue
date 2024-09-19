@@ -7,7 +7,7 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
     <h3 class="section-title">Новинки</h3>
     <div class="products-carousel">
       <div class="products-carousel__items">
-        <article class="product-card">
+        <article class="products-carousel__item product-card">
           <div class="product-card__header">
             <img
               class="product-card__image"
@@ -28,7 +28,7 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
             </div>
           </div>
         </article>
-        <article class="product-card">
+        <article class="products-carousel__item product-card">
           <div class="product-card__header">
             <img
               class="product-card__image"
@@ -57,7 +57,7 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
             </div>
           </div>
         </article>
-        <article class="product-card">
+        <article class="products-carousel__item product-card">
           <div class="product-card__header">
             <img
               class="product-card__image"
@@ -76,7 +76,7 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
             </div>
           </div>
         </article>
-        <article class="product-card">
+        <article class="products-carousel__item product-card">
           <div class="product-card__header">
             <img
               class="product-card__image"
