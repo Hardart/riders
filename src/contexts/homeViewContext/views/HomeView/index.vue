@@ -7,11 +7,13 @@ import BlogArticlesSlider from './components/BlogArticlesSlider/BlogArticlesSlid
 import HeroSlider from './components/HeroSlider/HeroSlider.vue'
 import SpecialOffer from './components/SpecialOffer/SpecialOffer.vue'
 import LoyalityInfo from './components/LoyalityInfo/LoyalityInfo.vue'
+import PopularCategories from './components/PopularCategories/PopularCategories.vue'
 </script>
 
 <template>
   <main class="main">
     <HeroSlider />
+    <PopularCategories />
     <Brands />
     <Promotions />
     <NewProducts />
