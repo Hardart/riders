@@ -135,6 +135,24 @@ input {
     right: 0;
     transform: translateY(-50%) rotateY(180deg);
   }
+
+  &__dots {
+    display: flex;
+    gap: 0 10px;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  &__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-gray);
+
+    &--active {
+      background-color: var(--color-black);
+    }
+  }
 }
 
 .carousel-navigation {

@@ -29,8 +29,14 @@
     }
   }
 
-  .slider-navigation,
-  .carousel-navigation {
+  .carousel-navigation,
+  .slider-navigation {
+    display: none;
+  }
+}
+
+@media (min-width: $screen-xl) {
+  .slider-navigation__dots {
     display: none;
   }
 }
