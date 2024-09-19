@@ -21,7 +21,11 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
             class="input__field input__field--icon input__field--icon-flip"
           />
           <label class="footer-top__subscribe-text">
-            Подпишись на рассылку и получи <span>-10%</span> скидку
+            <span>
+              Подпишись на рассылку и получи
+              <span class="footer-top__subscribe-text--accent">-10%</span>
+              скидку
+            </span>
           </label>
 
           <div class="input__icon input__icon--flip">
@@ -30,6 +34,33 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
         </div>
       </div>
     </div>
+    <ul class="social-links footer-top__links">
+      <li class="social-links__item">
+        <a href="" target="_blank">
+          <SvgIcon icon="twitter" class="icon-twitter" />
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a href="" target="_blank">
+          <SvgIcon icon="facebook" />
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a href="" target="_blank">
+          <SvgIcon icon="twitch" />
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a href="" target="_blank">
+          <SvgIcon icon="youtube" class="icon-youtube" />
+        </a>
+      </li>
+      <li class="social-links__item">
+        <a href="" target="_blank">
+          <SvgIcon icon="instagram" />
+        </a>
+      </li>
+    </ul>
   </div>
 </template>
 
