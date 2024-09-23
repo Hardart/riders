@@ -5,13 +5,17 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
 
 <template>
   <div class="header__mobile">
-    <div class="header__mobile-top">
+    <div class="header__mobile-wrapper">
       <div class="mobile-interactions">
-        <SvgIcon icon="menu" />
-        <SvgIcon icon="search" class="search-icon" />
+        <div class="mobile-interactions__menu">
+          <SvgIcon icon="menu" />
+        </div>
+        <div class="mobile-interactions__search">
+          <SvgIcon icon="search" class="search-icon" />
+        </div>
       </div>
       <div class="header__logo">
-        <SvgImage image="mobile-logo" />
+        <SvgImage image="mobile-logo" class="header__logo-image" />
       </div>
       <div class="user-interactions">
         <a href="#" class="user-interactions__link">
@@ -21,19 +25,6 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
           <SvgIcon icon="cart" class="user-interactions__icon" />
         </a>
       </div>
-    </div>
-    <div class="header__mobile-bottom">
-      <ul class="gender-filter">
-        <li class="gender-filter__item gender-filter__item--active">
-          <a href="" class="gender-filter__link">Мужчинам</a>
-        </li>
-        <li class="gender-filter__item">
-          <a href="" class="gender-filter__link">Женщинам</a>
-        </li>
-        <li class="gender-filter__item">
-          <a href="" class="gender-filter__link">Детям</a>
-        </li>
-      </ul>
     </div>
   </div>
 </template>

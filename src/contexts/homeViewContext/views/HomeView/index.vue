@@ -8,10 +8,12 @@ import HeroSlider from './components/HeroSlider/HeroSlider.vue'
 import SpecialOffer from './components/SpecialOffer/SpecialOffer.vue'
 import LoyalityInfo from './components/LoyalityInfo/LoyalityInfo.vue'
 import PopularCategories from './components/PopularCategories/PopularCategories.vue'
+import GenderFilter from './components/GenderFilter/GenderFilter.vue'
 </script>
 
 <template>
   <main class="main">
+    <GenderFilter />
     <HeroSlider />
     <PopularCategories />
     <Brands />

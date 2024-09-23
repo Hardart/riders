@@ -1,0 +1,21 @@
+@import '@/styles/media-queries/variables';
+
+.gender-filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+
+  &__item {
+    color: var(--color-gray-dark);
+    font-weight: var(--fw-medium);
+    line-height: 25px;
+
+    &--active {
+      color: var(--color-black);
+    }
+  }
+
+  @media (min-width: $screen-l) {
+    display: none;
+  }
+}
