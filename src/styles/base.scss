@@ -465,4 +465,37 @@ input {
   }
 }
 
+.location-panel {
+  display: flex;
+  gap: 0 35px;
+  font-size: var(--fs-s);
+  font-weight: var(--fw-medium);
+  line-height: 20px;
+
+  &__list {
+    display: flex;
+    gap: 0 25px;
+  }
+
+  .region-select {
+    display: inline-flex;
+    align-items: center;
+    gap: 0 15px;
+    margin-right: 10px;
+    color: var(--color-gray-lighter);
+    background-color: transparent;
+    cursor: pointer;
+
+    &__chevron-icon {
+      width: 10px;
+      height: 10px;
+      margin-top: 2px;
+    }
+
+    &__city {
+      margin-left: 5px;
+    }
+  }
+}
+
 @import './media-queries';
