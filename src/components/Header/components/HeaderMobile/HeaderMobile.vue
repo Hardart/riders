@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import SvgImage from '@/components/SvgImage/SvgImage.vue'
 import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
+import { mobileMenu } from '@/components/MobileMenu/state'
 </script>
 
 <template>
   <div class="header__mobile">
     <div class="header__mobile-wrapper">
       <div class="mobile-interactions">
-        <div class="mobile-interactions__menu">
+        <div
+          class="mobile-interactions__menu"
+          @click="mobileMenu.toggleOpenState"
+        >
           <SvgIcon icon="menu" />
         </div>
         <div class="mobile-interactions__search">

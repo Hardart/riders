@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import { mobileMenu } from './state'
 import SvgIcon from '../SvgIcon/SvgIcon.vue'
 </script>
 
 <template>
-  <div class="mobile-menu">
+  <div
+    class="mobile-menu"
+    v-if="mobileMenu.isContainer"
+    :class="mobileMenu.isOpen && 'mobile-menu--open'"
+    @click.self="mobileMenu.toggleOpenState"
+    @transitionend="mobileMenu.hideMobileContainer"
+  >
     <div class="mobile-menu__wrapper">
       <div class="mobile-menu__header">
         <ul class="gender-filter">
