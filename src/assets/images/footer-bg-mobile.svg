@@ -1,9 +1,5 @@
-<svg viewBox="0 0 414 732" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M0 37L117 0L311 52L414 37V732H0V37Z" fill="black"/>
-<g transform="translate(0,3)">
-    <path d="M0 37L117 0L311 52L414 37V400H0V37Z" fill="white"/>
-</g>
-<g transform="translate(0,8)">
-    <path d="M0 37L117 0L311 52L414 37V400H0V37Z" fill="black"/>
-</g>
+<svg width="900" height="140" viewBox="40 0 900 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-1 80L200 0 450 80L900 10L2000 140H-1" fill="black"/>
+<path d="M-1 86L200 6 450 86L900 16L2000 141H-1" fill="white"/>
+<path d="M-1 102L200 22 450 102L900 32L2000 141H-1" fill="black"/>
 </svg>
