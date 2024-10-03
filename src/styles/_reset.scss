@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'GrtskPeta', 'Helvetica Neue', system-ui, -apple-system,
+    sans-serif;
+  color: var(--color-black);
+  font-size: var(--fs-m);
+  font-weight: var(--fw-regular);
+  font-style: normal;
+  letter-spacing: -0.2px;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  border: none;
+  outline: none;
+  letter-spacing: -0.2px;
+}
+
+input {
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 25px;
+}
+
+details {
+  & summary {
+    &::marker,
+    &::-webkit-details-marker {
+      display: none;
+    }
+  }
+}
