@@ -1,6 +1,16 @@
-$screen-s: 576px;
-$screen-m: 768px;
-$screen-l: 1024px;
-$screen-xl: 1380px;
-$screen-2xl: 1600px;
-$screen-3xl: 2160px;
+$screen-s:        576px;
+$screen-m:        768px;
+$screen-l:        1024px;
+$screen-xl:       1380px;
+$screen-2xl:      1600px;
+$screen-3xl:      2160px;
+
+
+$breakpoints: (
+  s:              $screen-s,
+  m:              $screen-m,
+  l:              $screen-l,
+  xl:             $screen-xl,
+  2xl:            $screen-2xl,
+  3xl:            $screen-3xl,
+);

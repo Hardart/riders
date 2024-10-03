@@ -92,11 +92,11 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
         </div>
       </div>
     </div>
-    <div class="slider-navigation slider-navigation--left">
-      <SvgIcon icon="chevronLeft" class="slider-navigation__icon" />
+    <div class="slider-nav slider-nav--left hidden-l">
+      <SvgIcon icon="chevronLeft" class="slider-nav__icon" />
     </div>
-    <div class="slider-navigation slider-navigation--right">
-      <SvgIcon icon="chevronLeft" class="slider-navigation__icon" />
+    <div class="slider-nav slider-nav--right hidden-l">
+      <SvgIcon icon="chevronLeft" class="slider-nav__icon" />
     </div>
   </div>
 </template>

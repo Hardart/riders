@@ -37,18 +37,18 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
         </div>
       </div>
     </div>
-    <div class="slider-navigation slider-navigation--left">
-      <SvgIcon icon="chevronLeft" class="slider-navigation__icon" />
+    <div class="slider-nav slider-nav--left hidden-l">
+      <SvgIcon icon="chevronLeft" class="slider-nav__icon" />
     </div>
-    <div class="slider-navigation slider-navigation--right">
-      <SvgIcon icon="chevronLeft" class="slider-navigation__icon" />
+    <div class="slider-nav slider-nav--right hidden-l">
+      <SvgIcon icon="chevronLeft" class="slider-nav__icon" />
     </div>
-    <ul class="slider-navigation__dots">
-      <li class="slider-navigation__dot slider-navigation__dot--active"></li>
-      <li class="slider-navigation__dot"></li>
-      <li class="slider-navigation__dot"></li>
-      <li class="slider-navigation__dot"></li>
-      <li class="slider-navigation__dot"></li>
+    <ul class="slider-dot-nav visible-l">
+      <li class="slider-dot-nav__item slider-dot-nav__item--active"></li>
+      <li class="slider-dot-nav__item"></li>
+      <li class="slider-dot-nav__item"></li>
+      <li class="slider-dot-nav__item"></li>
+      <li class="slider-dot-nav__item"></li>
     </ul>
   </div>
 </template>
