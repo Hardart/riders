@@ -1,0 +1,24 @@
+@mixin content-grid--full {
+  grid-column: full !important;
+}
+
+@mixin content-grid($full: false) {
+  --full: minmax(var(--gap), 1fr);
+  --content: min(var(--content-width), 100% - var(--gap) * 2);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] var(--full)
+    [base-start] var(--content) [base-end]
+    var(--full) [full-end];
+
+  @if $full {
+    @include content-grid--full;
+  }
+
+  @content;
+
+  & > * {
+    grid-column: base;
+  }
+}

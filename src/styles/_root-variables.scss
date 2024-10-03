@@ -30,4 +30,24 @@
   --fs-2xl: 21px;
   --fs-3xl: 32px;
   --fs-4xl: 48px;
+
+  --content-width: 1360px;
+  --gap: 72px;
+
+  @media (min-width: $screen-3xl) {
+    --content-width: 2000px;
+    --gap: 240px;
+  }
+
+  @media (max-width: $screen-2xl) {
+    --gap: 60px;
+  }
+
+  @media (max-width: $screen-xl) {
+    --gap: 40px;
+  }
+
+  @media (max-width: $screen-l) {
+    --gap: 20px;
+  }
 }

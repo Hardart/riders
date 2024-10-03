@@ -1,7 +1,12 @@
 @import './fonts';
-@import './root-variables';
 @import './media-queries';
+@import './root-variables';
 @import './reset';
+@import './mixins';
+
+.main {
+  @include content-grid;
+}
 
 .icon {
   width: 20px;
