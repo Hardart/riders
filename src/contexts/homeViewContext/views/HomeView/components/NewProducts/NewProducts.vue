@@ -104,9 +104,9 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
       </div>
     </div>
 
-    <div class="section-show-more-button">
-      <button class="button button--secondary">Показать больше</button>
-    </div>
+    <button class="button button--secondary button--more">
+      Показать больше
+    </button>
   </section>
 </template>
 
