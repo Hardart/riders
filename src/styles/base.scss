@@ -1,5 +1,6 @@
 @import './fonts';
 @import './root-variables';
+@import './media-queries';
 @import './reset';
 
 .icon {
@@ -92,12 +93,28 @@
   font-weight: var(--fw-bold);
   line-height: 40px;
   text-align: center;
+
+  @media (min-width: $screen-3xl) {
+    margin-bottom: 15px;
+    font-size: var(--fs-4xl);
+    line-height: 45px;
+  }
+
+  @media (max-width: $screen-m) {
+    padding: 0 var(--gap);
+    font-size: var(--fs-2xl);
+    line-height: 30px;
+  }
 }
 
 .section-show-more-button {
   display: flex;
   justify-content: center;
   margin-top: 35px;
+
+  @media (max-width: $screen-l) {
+    margin-top: 20px;
+  }
 }
 
 .button {
@@ -156,6 +173,16 @@
 
   &::first-letter {
     text-transform: uppercase;
+  }
+
+  @media (min-width: $screen-3xl) {
+    font-size: var(--fs-2xl);
+    padding-block: 18px;
+    line-height: 30px;
+  }
+
+  @media (max-width: $screen-m) {
+    padding-block: 13px;
   }
 }
 
@@ -368,6 +395,25 @@
     width: 24px;
     height: 24px;
   }
+
+  @media (min-width: $screen-3xl) {
+    gap: 0 45px;
+
+    & .icon {
+      width: 28px;
+      height: 28px;
+    }
+
+    .icon-twitter {
+      width: 26px;
+      height: 26px;
+    }
+
+    .icon-youtube {
+      width: 30px;
+      height: 30px;
+    }
+  }
 }
 
 .location-panel {
@@ -399,6 +445,46 @@
 
     &__city {
       margin-left: 5px;
+    }
+  }
+
+  @media (min-width: $screen-3xl) {
+    font-size: var(--fs-l);
+    font-weight: var(--fw-medium);
+    line-height: 20px;
+  }
+
+  @media (max-width: $screen-l) {
+    flex-direction: column;
+    gap: 20px 0;
+    padding: 20px;
+
+    &__nav {
+      padding-left: 35px;
+    }
+
+    &__list {
+      display: flex;
+      gap: 0 30px;
+    }
+
+    .region-select {
+      display: inline-flex;
+      align-items: center;
+      gap: 0 15px;
+      margin-right: 10px;
+      color: var(--color-black);
+      cursor: pointer;
+
+      &__chevron-icon {
+        width: 10px;
+        height: 10px;
+        margin-top: 2px;
+      }
+
+      &__city {
+        margin-left: 5px;
+      }
     }
   }
 }
