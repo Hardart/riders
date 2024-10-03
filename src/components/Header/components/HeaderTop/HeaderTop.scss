@@ -1,11 +1,12 @@
-@import '@/styles/content-grid-extend.scss';
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
 
 .header__top {
-  padding: 13px 0;
-  @extend %content-grid;
-  @extend %content-grid--full;
-  color: var(--color-gray-lighter);
-  background-color: var(--color-black);
+  @include content-grid(true) {
+    padding: 13px 0;
+    color: var(--color-gray-lighter);
+    background-color: var(--color-black);
+  }
 
   @media (min-width: $screen-3xl) {
     padding: 18px 0;

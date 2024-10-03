@@ -1,11 +1,12 @@
-@import '@/styles/content-grid-extend.scss';
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
 
 .article-slider {
   position: relative;
   overflow: hidden;
   height: 645px;
   margin: 60px 0 45px;
-  @extend %content-grid--full;
+  @include content-grid--full;
 
   &__track {
     display: flex;

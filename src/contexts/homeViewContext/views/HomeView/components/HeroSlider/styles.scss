@@ -1,9 +1,10 @@
-@import '@/styles/content-grid-extend.scss';
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
 
 .hero-slider {
   position: relative;
   margin: 30px 0;
-  @extend %content-grid--full;
+  @include content-grid--full;
 
   &__container {
     display: flex;

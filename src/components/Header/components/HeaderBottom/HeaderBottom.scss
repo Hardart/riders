@@ -1,11 +1,12 @@
-@import '@/styles/content-grid-extend.scss';
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
 
 .header__bottom {
-  @extend %content-grid;
-  @extend %content-grid--full;
-  color: var(--color-black);
-  background-color: var(--color-gray-lighter);
-  min-height: 60px;
+  @include content-grid(true) {
+    color: var(--color-black);
+    background-color: var(--color-gray-lighter);
+    min-height: 60px;
+  }
 
   @media (min-width: $screen-3xl) {
     min-height: 80px;

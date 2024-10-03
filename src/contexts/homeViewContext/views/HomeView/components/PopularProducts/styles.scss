@@ -1,11 +1,12 @@
-@import '@/styles/media-queries/variables';
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
 
 .popular-products {
   margin: 20px 0;
   padding: 40px 0;
 
   @media (max-width: $screen-xl) {
-    grid-column: full !important;
+    @include content-grid--full;
   }
 
   @media (max-width: $screen-m) {
