@@ -1,7 +1,7 @@
 @import '@/styles/media-queries';
 
 .gender-filter {
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 15px 0;
 
@@ -15,7 +15,7 @@
     }
   }
 
-  @media (min-width: $screen-l) {
-    display: none;
+  @media (max-width: $screen-l) {
+    display: flex;
   }
 }

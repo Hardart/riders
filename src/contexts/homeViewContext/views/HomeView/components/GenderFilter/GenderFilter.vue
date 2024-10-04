@@ -14,4 +14,4 @@
   </ul>
 </template>
 
-<style lang="scss" scoped src="./GenderFilter.scss"></style>
+<style lang="scss" scoped src="./styles.scss"></style>
