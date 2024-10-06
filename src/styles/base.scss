@@ -387,7 +387,6 @@
   }
 
   @media (max-width: $screen-m) {
-    padding: 0 var(--gap);
     font-size: var(--fs-2xl);
     line-height: 30px;
   }
@@ -442,6 +441,11 @@
 .carousel {
   position: relative;
   padding: 40px 0;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   &__items {
     display: flex;
@@ -502,7 +506,8 @@
 
   @media (max-width: $screen-xl) {
     position: relative;
-    padding: var(--gap);
+    padding-inline: var(--gap);
+    margin-inline: calc(var(--gap) * -1);
     overflow-x: scroll;
 
     &__items {
@@ -518,35 +523,29 @@
       }
     }
 
-    &::-webkit-scrollbar {
+    &__navigation {
       display: none;
     }
   }
 
   @media (max-width: $screen-l) {
+    --max-width: 250px;
+
     &__item {
-      --max-width: 250px;
       max-width: var(--max-width);
 
       &:last-child {
         max-width: calc(var(--max-width) + var(--gap));
       }
     }
-
-    &__navigation {
-      display: none;
-    }
   }
 
   @media (max-width: $screen-m) {
+    --max-width: 230px;
     padding: 20px;
 
     &__items {
       gap: 0 10px;
-    }
-
-    &__item {
-      --max-width: 230px;
     }
   }
 }
@@ -568,8 +567,6 @@
   &__image {
     padding: 50px 25px;
     background-color: #f9f9f9;
-    aspect-ratio: 1;
-    object-fit: contain;
   }
 
   &__title {
@@ -763,4 +760,28 @@
 
   @media (max-width: $screen-m) {
   }
+}
+
+.separator {
+  display: block;
+  height: 1px;
+  margin-block: 25px;
+  background-color: var(--color-gray);
+  border: none;
+
+  @media (min-width: $screen-3xl) {
+    margin-block: 35px;
+  }
+
+  @media (max-width: $screen-l) {
+    margin-block: 20px;
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding-inline: 10px;
+  color: var(--color-white);
+  background-color: var(--color-red);
+  line-height: 25px;
 }

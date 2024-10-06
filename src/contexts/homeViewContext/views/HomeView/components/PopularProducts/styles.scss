@@ -1,13 +1,8 @@
 @import '@/styles/media-queries';
-@import '@/styles/mixins';
 
 .popular-products {
   margin: 20px 0;
   padding: 40px 0;
-
-  @media (max-width: $screen-xl) {
-    @include content-grid--full;
-  }
 
   @media (max-width: $screen-m) {
     margin: 0;
