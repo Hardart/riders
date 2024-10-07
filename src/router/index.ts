@@ -9,6 +9,14 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
+    {
+      path: `/product`,
+      name: 'product',
+      component: () =>
+        import(
+          `@/contexts/productCardViewContext/views/ProductCardView/index.vue`
+        ),
+    },
   ],
 })
 
