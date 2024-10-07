@@ -5,115 +5,116 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
 <template>
   <section class="popular-products">
     <h3 class="section-title">DC Shoes популярное в коллекции</h3>
-    <div class="products-carousel">
-      <div class="products-carousel__items">
-        <article class="product-card">
-          <div class="product-card__header">
+
+    <div class="carousel">
+      <div class="carousel__items">
+        <article class="carousel__item carousel-card">
+          <div class="carousel-card__header">
             <img
-              class="product-card__image"
+              class="carousel-card__image"
               src="@/assets/images/image 9-3.png"
               alt=""
             />
-            <div class="product-card__favorite">
-              <SvgIcon icon="star" class="product-card__favorite-icon" />
+            <div class="carousel-card__favorite">
+              <SvgIcon icon="star" class="carousel-card__favorite-icon" />
             </div>
-            <div class="product-card__info">
-              <p class="product-card__badge product-card__badge--accent">
+            <div class="carousel-card__info">
+              <p class="carousel-card__badge carousel-card__badge--accent">
                 -50%
               </p>
             </div>
           </div>
-          <div class="product-card__body">
-            <h4 class="product-card__title">lib tech</h4>
-            <p class="product-card__description">Мужской Сноуборд</p>
-            <div class="product-card__pricing">
-              <span class="product-card__price product-card__price--old">
+          <div class="carousel-card__body">
+            <h4 class="carousel-card__title">lib tech</h4>
+            <p class="carousel-card__description">Мужской Сноуборд</p>
+            <div class="carousel-card__pricing">
+              <span class="carousel-card__price carousel-card__price--old">
                 34392 ₽
               </span>
-              <span class="product-card__price product-card__price--new">
+              <span class="carousel-card__price carousel-card__price--new">
                 17392 ₽
               </span>
             </div>
           </div>
         </article>
-        <article class="product-card">
-          <div class="product-card__header">
+        <article class="carousel__item carousel-card">
+          <div class="carousel-card__header">
             <img
-              class="product-card__image"
+              class="carousel-card__image"
               src="@/assets/images/image 9-4.png"
               alt=""
             />
-            <div class="product-card__favorite">
-              <SvgIcon icon="star" class="product-card__favorite-icon" />
+            <div class="carousel-card__favorite">
+              <SvgIcon icon="star" class="carousel-card__favorite-icon" />
             </div>
-            <div class="product-card__info">
-              <p class="product-card__badge product-card__badge--accent">
+            <div class="carousel-card__info">
+              <p class="carousel-card__badge carousel-card__badge--accent">
                 -50%
               </p>
             </div>
           </div>
-          <div class="product-card__body">
-            <h4 class="product-card__title">lib tech</h4>
-            <p class="product-card__description">Мужской Сноуборд</p>
-            <div class="product-card__pricing">
-              <span class="product-card__price product-card__price--old">
+          <div class="carousel-card__body">
+            <h4 class="carousel-card__title">lib tech</h4>
+            <p class="carousel-card__description">Мужской Сноуборд</p>
+            <div class="carousel-card__pricing">
+              <span class="carousel-card__price carousel-card__price--old">
                 34392 ₽
               </span>
-              <span class="product-card__price product-card__price--new">
+              <span class="carousel-card__price carousel-card__price--new">
                 17392 ₽
               </span>
             </div>
           </div>
         </article>
-        <article class="product-card">
-          <div class="product-card__header">
+        <article class="carousel__item carousel-card">
+          <div class="carousel-card__header">
             <img
-              class="product-card__image"
+              class="carousel-card__image"
               src="@/assets/images/image 9-1.png"
               alt=""
             />
-            <div class="product-card__favorite">
-              <SvgIcon icon="star" class="product-card__favorite-icon" />
+            <div class="carousel-card__favorite">
+              <SvgIcon icon="star" class="carousel-card__favorite-icon" />
             </div>
           </div>
-          <div class="product-card__body">
-            <h4 class="product-card__title">lib tech</h4>
-            <p class="product-card__description">Мужской Сноуборд</p>
-            <div class="product-card__pricing">
-              <span class="product-card__price"> 34392 ₽ </span>
+          <div class="carousel-card__body">
+            <h4 class="carousel-card__title">lib tech</h4>
+            <p class="carousel-card__description">Мужской Сноуборд</p>
+            <div class="carousel-card__pricing">
+              <span class="carousel-card__price"> 34392 ₽ </span>
             </div>
           </div>
         </article>
-        <article class="product-card">
-          <div class="product-card__header">
+        <article class="carousel__item carousel-card">
+          <div class="carousel-card__header">
             <img
-              class="product-card__image"
+              class="carousel-card__image"
               src="@/assets/images/image 9-2.png"
               alt=""
             />
-            <div class="product-card__favorite">
-              <SvgIcon icon="star" class="product-card__favorite-icon" />
+            <div class="carousel-card__favorite">
+              <SvgIcon icon="star" class="carousel-card__favorite-icon" />
             </div>
           </div>
-          <div class="product-card__body">
-            <h4 class="product-card__title">lib tech</h4>
-            <p class="product-card__description">Мужской Сноуборд</p>
-            <div class="product-card__pricing">
-              <span class="product-card__price"> 34392 ₽ </span>
+          <div class="carousel-card__body">
+            <h4 class="carousel-card__title">lib tech</h4>
+            <p class="carousel-card__description">Мужской Сноуборд</p>
+            <div class="carousel-card__pricing">
+              <span class="carousel-card__price"> 34392 ₽ </span>
             </div>
           </div>
         </article>
       </div>
-      <div class="carousel-navigation carousel-navigation--left">
-        <SvgIcon icon="chevronLeft" class="carousel-navigation__icon" />
+      <div class="carousel__navigation carousel__navigation--left">
+        <SvgIcon icon="chevronLeft" class="carousel__navigation-icon" />
       </div>
-      <div class="carousel-navigation carousel-navigation--right">
-        <SvgIcon icon="chevronLeft" class="carousel-navigation__icon" />
+      <div class="carousel__navigation carousel__navigation--right">
+        <SvgIcon icon="chevronLeft" class="carousel__navigation-icon" />
       </div>
     </div>
-    <div class="section-show-more-button">
-      <button class="button button--secondary">Показать больше</button>
-    </div>
+    <button class="button button--secondary button--more">
+      Показать больше
+    </button>
   </section>
 </template>
 

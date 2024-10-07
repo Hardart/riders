@@ -2,6 +2,7 @@
 import HeaderTop from './components/HeaderTop/HeaderTop.vue'
 import HeaderMiddle from './components/HeaderMiddle/HeaderMiddle.vue'
 import HeaderBottom from './components/HeaderBottom/HeaderBottom.vue'
+import HeaderMobile from './components/HeaderMobile/HeaderMobile.vue'
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import HeaderBottom from './components/HeaderBottom/HeaderBottom.vue'
     <HeaderTop />
     <HeaderMiddle />
     <HeaderBottom />
+    <HeaderMobile />
   </header>
 </template>
 

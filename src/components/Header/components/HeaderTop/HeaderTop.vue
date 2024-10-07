@@ -5,21 +5,28 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
 <template>
   <div class="header__top">
     <div class="navbar-top">
-      <div class="navbar-top__wrapper">
-        <button class="region-select-button">
-          <SvgIcon icon="location" />
-          <span class="region-select-button__text">
+      <div class="location-panel">
+        <button class="location-panel__region-select region-select">
+          <SvgIcon icon="location" class="region-select__location-icon" />
+          <span class="region-select__text">
             Ваш регион доставки:
-            <span class="region-select-button__city">Москва</span>
+            <span class="region-select__city">Москва</span>
           </span>
-          <SvgIcon
-            icon="chevronDown"
-            class="region-select-button__chevron-icon"
-          />
+          <SvgIcon icon="chevronDown" class="region-select__chevron-icon" />
         </button>
-        <a href="#" class="navbar-top__link">Магазины</a>
-        <a href="#" class="navbar-top__link">Помощь</a>
-        <a href="#" class="navbar-top__link">Блоги</a>
+        <nav class="location-panel__nav">
+          <ul class="location-panel__list">
+            <li class="location-panel__item">
+              <a href="#" class="location-panel__link">Магазины</a>
+            </li>
+            <li class="location-panel__item">
+              <a href="#" class="location-panel__link">Помощь</a>
+            </li>
+            <li class="location-panel__item">
+              <a href="#" class="location-panel__link">Блоги</a>
+            </li>
+          </ul>
+        </nav>
       </div>
       <div class="user-services">
         <a href="#" class="user-services__link">

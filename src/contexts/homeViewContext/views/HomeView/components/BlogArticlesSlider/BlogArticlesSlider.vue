@@ -6,6 +6,7 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
   <div class="article-slider">
     <div class="article-slider__track">
       <div class="blog-slide">
+        <div class="blog-slide__head-title">Новые статьи</div>
         <div class="blog-slide__media">
           <img
             class="blog-slide__image"
@@ -25,7 +26,7 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
           </div>
           <div class="blog-slide__body">
             <h3 class="blog-slide__title">
-              Очень преочень <br />длинное название блога
+              Очень преочень длинное название блога
             </h3>
             <div class="blog-slide__preview-text">
               <p>
@@ -43,9 +44,10 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
             </div>
           </div>
           <div class="blog-slide__footer">
-            <a href="" class="blog-slide__read-more">Читать продолжение</a>
+            <a href="#" class="blog-slide__read-more">Читать продолжение</a>
           </div>
         </div>
+        <a href="#" class="blog-slide__show-all">Смотреть все статьи</a>
       </div>
       <div class="blog-slide">
         <div class="blog-slide__media">
@@ -90,11 +92,11 @@ import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
         </div>
       </div>
     </div>
-    <div class="slider-navigation slider-navigation--left">
-      <SvgIcon icon="chevronLeft" class="slider-navigation__icon" />
+    <div class="slider-nav slider-nav--left hidden-l">
+      <SvgIcon icon="chevronLeft" class="slider-nav__icon" />
     </div>
-    <div class="slider-navigation slider-navigation--right">
-      <SvgIcon icon="chevronLeft" class="slider-navigation__icon" />
+    <div class="slider-nav slider-nav--right hidden-l">
+      <SvgIcon icon="chevronLeft" class="slider-nav__icon" />
     </div>
   </div>
 </template>

@@ -1,22 +1,58 @@
-@import '@/styles/content-grid-extend.scss';
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
 
 .footer {
-  position: relative;
-  background-color: var(--color-black);
-  margin-top: 160px;
-  padding: 40px 0;
-  @extend %content-grid;
+  --bg-height: 160px;
+  @include content-grid {
+    position: relative;
+    background-color: var(--color-black);
+    margin-top: var(--bg-height);
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
 
   &::before {
     content: '';
     position: absolute;
-    top: -150px;
-    right: 0;
-    bottom: 0;
+    height: var(--bg-height);
     left: 0;
+    right: 0;
+    bottom: 100%;
     background-image: url('@/assets/images/footer-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: left bottom;
     z-index: -1;
+  }
+
+  @media (min-width: $screen-3xl) {
+    --bg-height: 250px;
+    padding-top: 10px;
+  }
+
+  @media (1920px < width < $screen-3xl) {
+    --bg-height: 210px;
+    padding-top: 10px;
+  }
+
+  @media (max-width: $screen-xl) {
+    --bg-height: 140px;
+  }
+
+  @media (max-width: $screen-l) {
+    --bg-height: 110px;
+  }
+
+  @media (max-width: $screen-m) {
+    --bg-height: 120px;
+    padding-top: 10px;
+
+    &::before {
+      background-image: url('@/assets/images/footer-bg-mobile.svg');
+    }
+  }
+
+  @media (max-width: $screen-s) {
+    --bg-height: 90px;
   }
 }

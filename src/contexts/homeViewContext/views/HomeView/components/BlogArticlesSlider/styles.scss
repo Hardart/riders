@@ -1,15 +1,31 @@
-@import '@/styles/content-grid-extend.scss';
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
 
 .article-slider {
   position: relative;
   overflow: hidden;
   height: 645px;
   margin: 60px 0 45px;
-  @extend %content-grid--full;
+  @include content-grid--full;
 
   &__track {
     display: flex;
     height: 100%;
+  }
+
+  @media (min-width: $screen-3xl) {
+    height: 800px;
+    margin: 60px 0;
+  }
+
+  @media (max-width: $screen-xl) {
+    margin-top: 30px;
+  }
+
+  @media (max-width: $screen-m) {
+    margin: 0;
+    padding: 30px 0;
+    height: auto;
   }
 }
 
@@ -22,6 +38,10 @@
   background-color: var(--color-black);
   font-weight: var(--fw-medium);
   overflow: hidden;
+
+  &__head-title {
+    display: none;
+  }
 
   &__media {
     position: relative;
@@ -92,6 +112,10 @@
     line-height: 25px;
     text-decoration: underline;
 
+    &__content {
+      padding: 40px 20px 20px;
+    }
+
     &::before {
       content: '';
       display: block;
@@ -101,40 +125,134 @@
       background-color: var(--color-white);
     }
   }
-}
 
-.media-controls {
-  position: absolute;
-  inset: 0;
+  &__show-all {
+    display: none;
+  }
 
-  &__play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80px;
-    height: 80px;
-    color: var(--color-black);
-    background-color: hsla(var(--color-white-hsl), 0.9);
-    border-radius: 50%;
-    box-shadow: -4px 4px 4px 0px hsla(var(--color-black-hsl), 0.05);
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-
-    &::before {
-      content: '';
-      position: absolute;
-      display: block;
-      top: 50%;
-      left: 50%;
-      width: 28px;
-      height: 24px;
-      border: 12px solid transparent;
-      border-left: 24px solid var(--color-black);
-      transform: translate(-25%, -50%);
+  @media (min-width: $screen-3xl) {
+    &__content {
+      padding: 80px;
     }
 
-    &:hover {
-      background-color: hsla(var(--color-gray-light-hsl), 0.9);
+    &__header {
+      margin-right: 35px;
+    }
+
+    &__category-link {
+      font-size: var(--fs-l);
+    }
+
+    &__body {
+      max-width: 700px;
+    }
+
+    &__title {
+      margin-bottom: 50px;
+      font-size: var(--fs-4xl);
+      line-height: 55px;
+    }
+
+    &__preview-text {
+      font-size: var(--fs-l);
+      line-height: 30px;
+    }
+
+    &__read-more {
+      font-size: var(--fs-l);
+    }
+  }
+
+  @media (max-width: $screen-xl) {
+    &__content {
+      padding: 40px;
+    }
+
+    &__footer {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: $screen-l) {
+    &__title {
+      font-size: var(--fs-2xl);
+      font-weight: var(--fw-bold);
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+
+    &__preview-text {
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: $screen-m) {
+    position: relative;
+    grid-template-columns: 1fr;
+    width: 100%;
+
+    &__media {
+      position: relative;
+      height: 370px;
+      overflow: visible;
+
+      & .media-controls__play {
+        top: 70%;
+      }
+    }
+
+    &__image {
+      position: relative;
+    }
+
+    &__head-title {
+      display: block;
+      padding: 40px 20px;
+      font-size: var(--fs-2xl);
+      font-weight: var(--fw-bold);
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &__content {
+      margin-inline: auto;
+      padding: 40px 20px 20px;
+      text-align: center;
+    }
+
+    &__header {
+      display: none;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      font-size: var(--fs-2xl);
+      line-height: 30px;
+    }
+
+    &__preview-text {
+      & p:not(:first-child) {
+        display: none;
+      }
+    }
+
+    &__footer {
+      margin-bottom: 0;
+    }
+
+    &__read-more {
+      display: none;
+    }
+
+    &__show-all {
+      display: block;
+      padding-top: 15px;
+      padding-bottom: 17px;
+      font-size: var(--fs-l);
+      font-weight: var(--fw-medium);
+      line-height: 19.2px;
+      text-align: center;
+      box-shadow: 0px -1px 0px 0px hsla(var(--color-white-hsl), 0.2);
     }
   }
 }

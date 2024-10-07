@@ -1,3 +1,5 @@
+@import '@/styles/media-queries';
+
 .footer-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,14 +16,16 @@
     position: absolute;
     top: 0;
     bottom: 0;
+    left: 0;
     display: flex;
     align-items: center;
     padding-left: 50px;
+    padding-right: 60px;
     font-size: var(--fs-l);
     font-weight: var(--fw-medium);
     pointer-events: none;
 
-    & span {
+    &--accent {
       color: var(--color-red);
       padding: 0 5px;
     }
@@ -39,6 +43,78 @@
     input:focus ~ .footer-top__subscribe-text,
     input:invalid ~ .footer-top__subscribe-text {
       display: none;
+    }
+  }
+
+  &__links {
+    display: none;
+  }
+
+  @media (min-width: $screen-3xl) {
+    padding: 20px 0 50px;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+    }
+
+    &__subscribe-text {
+      padding-left: 80px;
+      padding-right: 80px;
+      font-size: var(--fs-xl);
+    }
+
+    &__input {
+      height: 70px;
+
+      & .input__icon {
+        width: 80px;
+
+        & .icon {
+          width: 26px;
+          height: 26px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: $screen-xl) {
+    grid-template-columns: auto 1fr;
+    gap: 0 120px;
+
+    &__logo {
+      max-width: 250px;
+    }
+
+    &__subscribe-text {
+      display: inline-flex;
+    }
+  }
+
+  @media (max-width: $screen-l) {
+    gap: 0 50px;
+  }
+
+  @media (max-width: $screen-m) {
+    grid-template-columns: 1fr;
+    padding: 0 0 20px;
+    gap: 0 20px;
+
+    &__logo {
+      display: none;
+    }
+
+    &__subscribe-text {
+      font-size: var(--fs-m);
+    }
+
+    &__links {
+      display: flex;
+      justify-content: center;
+      gap: 0 50px;
+      margin-top: 20px;
+      padding: 20px 0;
     }
   }
 }

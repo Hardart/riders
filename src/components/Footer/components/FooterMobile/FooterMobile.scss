@@ -1,0 +1,97 @@
+@import '@/styles/media-queries';
+
+.footer-mobile {
+  display: none;
+
+  @media (max-width: $screen-m) {
+    display: block;
+  }
+}
+
+.footer-accordion {
+  display: block;
+  color: var(--color-gray-lighter);
+
+  &__panel {
+    border-top: 1px solid var(--color-gray-darker);
+
+    &:last-child {
+      border-bottom: 1px solid var(--color-gray-darker);
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    padding-right: 5px;
+    font-size: var(--fs-l);
+    font-weight: var(--fw-medium);
+    line-height: 19.2px;
+
+    &::after {
+      content: '';
+      width: 12px;
+      height: 12px;
+
+      background-color: var(--color-gray);
+      mask: url('@/assets/icons/chevronDown.svg') no-repeat center;
+      transition: rotate 300ms ease;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 300ms ease;
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 20px 0;
+    overflow: hidden;
+
+    & > *:first-child {
+      padding-top: 10px;
+    }
+  }
+}
+
+.footer-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 15px;
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__title {
+    font-size: var(--fs-m);
+    font-weight: var(--fw-medium);
+    line-height: 19.2px;
+  }
+
+  &__description {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    color: var(--color-gray-darker);
+    font-size: var(--fs-s);
+    line-height: 19.2px;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+  margin-bottom: 20px;
+  color: var(--color-gray-darker);
+  font-size: var(--fs-s);
+  font-weight: var(--fw-medium);
+  line-height: 14.4px;
+}

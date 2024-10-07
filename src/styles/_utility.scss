@@ -1,0 +1,13 @@
+@each $letter, $breakpoint in $breakpoints {
+  @media (max-width: $breakpoint) {
+    .hidden-#{$letter} {
+      display: none !important;
+    }
+  }
+
+  @media (min-width: $breakpoint) {
+    .visible-#{$letter} {
+      display: none !important;
+    }
+  }
+}

@@ -1,5 +1,5 @@
-@import '@/styles/content-grid-extend.scss';
+@import '@/styles/mixins';
 
 .header {
-  @extend %content-grid;
+  @include content-grid;
 }

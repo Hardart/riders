@@ -1,11 +1,20 @@
-@import '@/styles/content-grid-extend.scss';
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
 
 .header__top {
-  padding: 13px 0;
-  @extend %content-grid;
-  @extend %content-grid--full;
-  color: var(--color-gray-lighter);
-  background-color: var(--color-black);
+  @include content-grid(true) {
+    padding: 13px 0;
+    color: var(--color-gray-lighter);
+    background-color: var(--color-black);
+  }
+
+  @media (min-width: $screen-3xl) {
+    padding: 18px 0;
+  }
+
+  @media (max-width: $screen-l) {
+    display: none;
+  }
 }
 
 .navbar-top {
@@ -30,31 +39,10 @@
   &__link {
     margin-left: 25px;
   }
-}
 
-.region-select-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 0 15px;
-  margin-right: 10px;
-  color: var(--color-gray-lighter);
-  background-color: var(--color-black);
-  cursor: pointer;
-
-  &__text {
-    font-size: var(--fs-s);
-    font-weight: var(--fw-medium);
-    line-height: 20px;
-  }
-
-  &__chevron-icon {
-    width: 10px;
-    height: 10px;
-    margin-top: 2px;
-  }
-
-  &__city {
-    margin-left: 5px;
+  @media (min-width: $screen-3xl) {
+    font-size: var(--fs-l);
+    line-height: 30px;
   }
 }
 
@@ -75,6 +63,24 @@
     &--truck {
       width: 24px;
       height: 24px;
+    }
+  }
+
+  @media (min-width: $screen-3xl) {
+    &__icon {
+      width: 26px;
+      height: 26px;
+
+      &--truck {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-xl) {
+    &__text {
+      display: none;
     }
   }
 }
