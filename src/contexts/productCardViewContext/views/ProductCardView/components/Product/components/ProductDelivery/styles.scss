@@ -1,0 +1,123 @@
+@import '@/styles/media-queries';
+
+.product-delivery {
+  &__title {
+    margin-bottom: 25px;
+    font-size: var(--fs-l);
+    line-height: 20px;
+  }
+
+  &__variants {
+    display: grid;
+    gap: 10px 0;
+  }
+
+  &__place {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__media {
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: var(--color-gray-lighter);
+  }
+
+  &__truck-icon {
+    width: 49px;
+    height: 32px;
+  }
+
+  &__location-icon {
+    width: 25px;
+    height: 36px;
+  }
+
+  &__shop-icon {
+    width: 37px;
+    height: 32px;
+  }
+
+  &__method {
+    margin-bottom: 5px;
+    line-height: 20px;
+  }
+
+  &__select {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-wrap: nowrap;
+    cursor: pointer;
+  }
+
+  &__details {
+    font-weight: var(--fw-medium);
+    line-height: 25px;
+  }
+
+  &__price {
+    &--free {
+      color: var(--color-green);
+    }
+  }
+
+  &__old-price {
+    margin-left: 30px;
+    color: var(--color-gray-darker);
+    text-decoration: line-through;
+  }
+
+  @media (min-width: $screen-3xl) {
+    &__title {
+      margin-bottom: 35px;
+      font-size: var(--fs-xl);
+      line-height: 25px;
+    }
+
+    &__variants {
+      gap: 20px 0;
+    }
+
+    &__place {
+      gap: 25px;
+    }
+
+    &__media {
+      width: 100px;
+      height: 90px;
+      border-radius: 5px;
+    }
+
+    &__truck-icon {
+      scale: 1.15;
+    }
+
+    &__location-icon {
+      scale: 1.25;
+    }
+
+    &__shop-icon {
+      scale: 1.15;
+    }
+
+    &__method {
+      margin-bottom: 10px;
+      font-size: var(--fs-l);
+      line-height: 25px;
+    }
+
+    &__details {
+      font-size: var(--fs-l);
+      line-height: 30px;
+    }
+  }
+
+  @media (max-width: $screen-m) {
+    margin-top: 40px;
+  }
+}
