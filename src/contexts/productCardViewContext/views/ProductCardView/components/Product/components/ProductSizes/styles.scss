@@ -1,0 +1,32 @@
+@import '@/styles/media-queries';
+
+.product-sizes {
+  margin-bottom: 25px;
+
+  &__title {
+    margin-bottom: 25px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  &__control {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  @media (min-width: $screen-3xl) {
+    margin-bottom: 35px;
+
+    &__title {
+      margin-bottom: 35px;
+      font-size: var(--fs-l);
+      line-height: 25px;
+    }
+
+    &__control {
+      gap: 20px;
+    }
+  }
+}
