@@ -1,0 +1,254 @@
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
+
+.product {
+  --aside-width: 420px;
+  --aside-gap: 50px;
+
+  display: grid;
+  grid-template-columns: 1fr var(--aside-width);
+  gap: 0 var(--aside-gap);
+  margin-top: 40px;
+
+  &__article {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: var(--fs-s);
+    line-height: 20px;
+  }
+
+  &__details {
+    grid-column: 2;
+    grid-row: 1 / 4;
+
+    &-group {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__rating {
+    margin-left: 25px;
+  }
+
+  &__favorite {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: auto;
+    color: transparent;
+    background-color: transparent;
+    border: 1px solid var(--color-black);
+    stroke: var(--color-black);
+  }
+
+  &__title {
+    margin-block: 15px;
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-medium);
+    line-height: 35px;
+  }
+
+  &__discount {
+    display: none;
+  }
+
+  &__price {
+    flex: 1;
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-medium);
+    line-height: 35px;
+  }
+
+  &__old-price {
+    display: none;
+  }
+
+  &__cheaper-price {
+    display: block;
+    font-size: var(--fs-m);
+    line-height: 25px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  &__button {
+    margin-top: 45px;
+
+    & + & {
+      margin-top: 15px;
+    }
+  }
+
+  &__media {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $screen-3xl) {
+    grid-template-columns: 1fr 650px;
+    gap: 0 100px;
+
+    &__article {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: var(--fs-m);
+      line-height: 25px;
+    }
+
+    &__brand {
+      width: 70px;
+      height: 70px;
+    }
+
+    &__rating {
+      margin-left: 50px;
+    }
+
+    &__favorite {
+      width: 50px;
+      height: 50px;
+
+      & .icon {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    &__title {
+      margin-block: 25px;
+      font-size: var(--fs-3xl);
+      line-height: 45px;
+    }
+
+    &__price {
+      font-size: var(--fs-4xl);
+      line-height: 45px;
+    }
+
+    &__cheaper-price {
+      font-size: var(--fs-l);
+      line-height: 30px;
+    }
+
+    &__button {
+      width: 100%;
+      margin-top: 55px;
+      font-size: var(--fs-2xl);
+      line-height: 30px;
+
+      & + & {
+        margin-top: 25px;
+      }
+    }
+
+    &__media {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: $screen-xl) {
+    --aside-width: 400px;
+    margin-top: 20px;
+
+    &__details {
+      grid-column: 2;
+      grid-row: 1 / 4;
+
+      &-group {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  @media (max-width: $screen-l) {
+    --aside-gap: 30px;
+
+    &__price {
+      flex: 0 0 auto;
+      margin-right: 45px;
+    }
+  }
+
+  @media (max-width: $screen-m) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-top: 0;
+
+    &__details {
+      grid-column: 1;
+      grid-row: auto;
+      margin-top: 0;
+      padding: 20px 0;
+    }
+
+    &__article {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      line-height: 14px;
+    }
+
+    &__brand {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__rating {
+      margin-left: 20px;
+    }
+
+    &__favorite {
+      width: 36px;
+      height: 36px;
+
+      & .icon {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    &__title {
+      margin-top: 10px;
+      margin-bottom: 15px;
+      font-size: var(--fs-2xl);
+      font-weight: var(--fw-medium);
+      line-height: 35px;
+    }
+
+    &__discount {
+      display: block;
+      margin-right: 15px;
+    }
+
+    &__price {
+      flex: 1 0 auto;
+      margin-right: 0;
+      color: var(--color-red);
+      line-height: 38px;
+    }
+
+    &__old-price {
+      display: block;
+      margin-bottom: -5px;
+      font-size: var(--fs-m);
+      line-height: 25px;
+      text-decoration: line-through;
+    }
+
+    &__cheaper-price {
+      line-height: 20px;
+    }
+
+    &__button {
+      margin-top: 40px;
+      padding-block: 19px;
+      font-size: var(--fs-l);
+
+      & + & {
+        margin-top: 10px;
+      }
+    }
+  }
+}
