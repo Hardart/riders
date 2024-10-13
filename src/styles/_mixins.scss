@@ -22,3 +22,21 @@
     grid-column: base;
   }
 }
+
+@mixin custom-scrollbar($color: red) {
+  scrollbar-color: var(--color-#{$color}) var(--color-#{$color});
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+
+    &-thumb {
+      background-color: var(--color-#{$color});
+    }
+
+    &-track {
+      background-color: var(--color-gray-lighter);
+    }
+  }
+}

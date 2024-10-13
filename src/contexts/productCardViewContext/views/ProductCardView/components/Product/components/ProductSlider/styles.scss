@@ -1,0 +1,157 @@
+@import '@/styles/media-queries';
+@import '@/styles/mixins';
+
+.product-slider {
+  --preview-width: 150px;
+  --gap: 35px;
+
+  display: grid;
+  grid-template-columns: var(--preview-width) 1fr;
+  gap: 0 var(--gap);
+  margin-bottom: 25px;
+
+  &__preview {
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 6px;
+      height: 150px;
+      opacity: 1;
+      pointer-events: none;
+
+      background: linear-gradient(
+        rgba(255, 255, 255, 0) 0%,
+        var(--color-white) 90%
+      );
+    }
+  }
+
+  &__list {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-right: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    @include custom-scrollbar;
+  }
+
+  &__item {
+    display: flex;
+    place-items: center;
+    width: 100%;
+    padding: 20px 15px;
+    border: 1px solid transparent;
+
+    &--active {
+      background-color: var(--color-gray-lighter);
+      border-color: var(--color-gray);
+    }
+  }
+
+  &__view {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &__button {
+    display: none;
+    padding: 17px;
+    color: var(--color-white);
+    line-height: 20px;
+    background-color: var(--color-black);
+  }
+
+  &__navigation {
+    display: none;
+    margin-block: 30px;
+  }
+
+  @media (min-width: $screen-3xl) {
+    --preview-width: 250px;
+
+    gap: 0 45px;
+    margin-bottom: 35px;
+
+    &__preview {
+      &::after {
+        height: 250px;
+      }
+    }
+
+    &__item {
+      width: 180px;
+      padding: 40px 30px;
+      border-width: 2px;
+    }
+  }
+
+  @media (max-width: $screen-xl) {
+    --preview-width: 120px;
+    --gap: 25px;
+  }
+
+  @media (max-width: $screen-l) {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+
+    &__preview {
+      display: none;
+    }
+
+    &__view {
+      max-height: 250px;
+    }
+
+    &__navigation {
+      display: flex;
+    }
+  }
+
+  @media (max-width: $screen-m) {
+    gap: 0;
+    margin-inline: calc(var(--gap) * -1);
+    margin-bottom: 10px;
+    background-color: var(--color-gray-lighter);
+
+    &__view {
+      padding-top: 20px;
+      max-height: 310px;
+    }
+
+    &__button {
+      display: block;
+      grid-column: 1/-1;
+    }
+  }
+
+  @media (max-width: $screen-s) {
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+
+    &__preview {
+      display: none;
+    }
+
+    &__view {
+      padding: 25px 20px;
+      max-height: none;
+    }
+
+    &__navigation {
+      display: flex;
+      margin-top: 10px;
+    }
+  }
+}
