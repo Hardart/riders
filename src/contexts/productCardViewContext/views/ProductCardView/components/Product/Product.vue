@@ -6,6 +6,7 @@ import ProductRating from './components/ProductRating/ProductRating.vue'
 import ProductColors from './components/ProductColors/ProductColors.vue'
 import ProductSizes from './components/ProductSizes/ProductSizes.vue'
 import ProductDelivery from './components/ProductDelivery/ProductDelivery.vue'
+import ProductCharachteristics from './components/ProductCharachteristics/ProductCharachteristics.vue'
 </script>
 
 <template>
@@ -45,6 +46,7 @@ import ProductDelivery from './components/ProductDelivery/ProductDelivery.vue'
       <hr class="separator hidden-m" />
       <ProductDelivery />
     </div>
+    <ProductCharachteristics class="hidden-m" />
   </div>
 </template>
 

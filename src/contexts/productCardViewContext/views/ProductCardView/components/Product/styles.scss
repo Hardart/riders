@@ -87,13 +87,13 @@
   }
 
   @media (min-width: $screen-3xl) {
-    grid-template-columns: 1fr 650px;
-    gap: 0 100px;
+    --aside-width: 650px;
+    --aside-gap: 100px;
 
     &__article {
       margin-top: 20px;
       margin-bottom: 30px;
-      font-size: var(--fs-m);
+      font-size: var(--fs-l);
       line-height: 25px;
     }
 
@@ -164,6 +164,7 @@
   }
 
   @media (max-width: $screen-l) {
+    --aside-width: 380px;
     --aside-gap: 30px;
 
     &__price {

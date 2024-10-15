@@ -1,0 +1,157 @@
+@import '@/styles/media-queries';
+
+.product-charachteristics {
+  margin-block: 45px;
+
+  &__title {
+    margin-bottom: 25px;
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-medium);
+    line-height: 35px;
+  }
+
+  &__description {
+    margin-bottom: 25px;
+    font-size: var(--fs-l);
+    line-height: 30px;
+  }
+
+  &__schemas {
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+    margin-bottom: 25px;
+    padding-block: 20px;
+  }
+
+  &__properties {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 190px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    flex: 1;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-name {
+      font-size: var(--fs-l);
+      line-height: 30px;
+    }
+
+    &-value {
+      font-size: var(--fs-l);
+      font-weight: var(--fw-medium);
+      line-height: 25px;
+    }
+  }
+
+  @media (min-width: $screen-3xl) {
+    &__title {
+      margin-bottom: 35px;
+      font-size: var(--fs-3xl);
+      line-height: 40px;
+    }
+
+    &__description {
+      margin-bottom: 35px;
+      font-size: var(--fs-2xl);
+      line-height: 45px;
+    }
+
+    &__schemas {
+      gap: 0 60px;
+      padding-block: 30px;
+      margin-bottom: 35px;
+
+      & > * {
+        width: 40%;
+      }
+    }
+
+    &__properties {
+      gap: 300px;
+      padding-block: 25px;
+      margin-bottom: 35px;
+    }
+
+    &__list {
+      gap: 20px 0;
+    }
+
+    &__item {
+      &-name {
+        font-size: var(--fs-2xl);
+        line-height: 40px;
+      }
+
+      &-value {
+        font-size: var(--fs-2xl);
+        line-height: 35px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-xl) {
+    &__properties {
+      gap: 0 70px;
+    }
+  }
+
+  @media (max-width: $screen-l) {
+    margin-block: 20px;
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__description {
+      padding-block: 15px;
+      margin-bottom: 10px;
+      font-size: var(--fs-m);
+      line-height: 25px;
+    }
+
+    &__properties {
+      flex-direction: column;
+      gap: 40px 0;
+    }
+
+    &__list {
+      gap: 10px 0;
+    }
+
+    &__item {
+      &-name {
+        font-size: var(--fs-m);
+        line-height: 30px;
+      }
+
+      &-value {
+        font-size: var(--fs-m);
+        line-height: 30px;
+      }
+    }
+  }
+
+  @media (max-width: $screen-m) {
+    &__schemas {
+      flex-wrap: wrap;
+      gap: 60px 0;
+      margin-bottom: 10px;
+      padding-block: 15px;
+    }
+
+    &__schema {
+      width: 100%;
+    }
+  }
+}
