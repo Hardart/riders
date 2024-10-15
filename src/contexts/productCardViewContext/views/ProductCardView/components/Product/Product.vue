@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import SvgIcon from '@/components/SvgIcon/SvgIcon.vue'
 import SvgImage from '@/components/SvgImage/SvgImage.vue'
+import MediaPlayer from '@/components/MediaPlayer/MediaPlayer.vue'
 import ProductSlider from './components/ProductSlider/ProductSlider.vue'
 import ProductRating from './components/ProductRating/ProductRating.vue'
 import ProductColors from './components/ProductColors/ProductColors.vue'
@@ -47,6 +48,10 @@ import ProductCharachteristics from './components/ProductCharachteristics/Produc
       <ProductDelivery />
     </div>
     <ProductCharachteristics class="hidden-m" />
+    <MediaPlayer class="product__media" />
+    <div class="product__poster">
+      <img src="@/assets/images/skate.jpg" alt="" />
+    </div>
   </div>
 </template>
 
