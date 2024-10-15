@@ -75,8 +75,8 @@
   @media (min-width: $screen-3xl) {
     &__title {
       margin-bottom: 35px;
-      font-size: var(--fs-xl);
-      line-height: 25px;
+      font-size: var(--fs-2xl);
+      line-height: 30px;
     }
 
     &__variants {
@@ -107,12 +107,12 @@
 
     &__method {
       margin-bottom: 10px;
-      font-size: var(--fs-l);
-      line-height: 25px;
+      font-size: var(--fs-xl);
+      line-height: 30px;
     }
 
     &__details {
-      font-size: var(--fs-l);
+      font-size: var(--fs-xl);
       line-height: 30px;
     }
   }
