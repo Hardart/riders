@@ -1,0 +1,9 @@
+@import '@/styles/media-queries';
+
+.media-player {
+  position: relative;
+  display: grid;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: var(--color-gray-lighter);
+}
