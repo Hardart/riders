@@ -175,6 +175,10 @@
       min-width: 70px;
       padding: 5px;
     }
+
+    &--xl {
+      padding-block: 29px;
+    }
   }
 
   @media (max-width: $screen-l) {
